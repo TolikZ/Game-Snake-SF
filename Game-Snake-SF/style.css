@@ -1,0 +1,84 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #201f33;
+  margin: 0;
+  padding: 70px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.app {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+input {
+  width: 180px;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.field {
+  width: 450px;
+  height: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ddd;
+}
+
+.cell {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #e7e7e7;
+}
+
+.snakeTail {
+  background-color: #228b22;
+  border-radius: 5px;
+}
+
+.head {
+  background-color: #2a5a25;
+  border-radius: 5px;
+}
+
+.food {
+  background-color: #ff4500;
+  border-radius: 50%;
+}
+
+.game-over {
+  position: absolute;
+  top: 326px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 45px;
+  color: #490000;
+  opacity: 0;
+  z-index: 3;
+  padding: 10px;
+  background-color: #dda476;
+}
+
+.game-over.active {
+  opacity: 1;
+}
